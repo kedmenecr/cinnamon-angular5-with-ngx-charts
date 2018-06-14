@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+html,body{
+  font-family:  Helvetica, sans-serif;
+  margin-left: 20%;
+  margin-top: 40px;
+}
