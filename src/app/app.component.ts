@@ -7,42 +7,65 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 // data goes here
-  single: any[];
-  multi: any[] = [
+public single = [
   {
-    name: 'Cyan',
-    series: [
+    "name": "Germany",
+    "value": 8940000
+  },
+  {
+    "name": "USA",
+    "value": 5000000
+  },
+  {
+    "name": "France",
+    "value": 7200000
+  }
+];
+
+public multi = [
+  {
+    "name": "Germany",
+    "series": [
       {
-        name: 5,
-        value: 2650
+        "name": "2010",
+        "value": 7300000
       },
       {
-        name: 10,
-        value: 2800      },
-      {
-        name: 15,
-        value: 2000
+        "name": "2011",
+        "value": 8940000
       }
     ]
   },
+
   {
-    name: 'Yellow',
-    series: [
+    "name": "USA",
+    "series": [
       {
-        name: 5,
-        value: 2500
+        "name": "2010",
+        "value": 7870000
       },
       {
-        name: 10,
-        value: 3100
+        "name": "2011",
+        "value": 8270000
+      }
+    ]
+  },
+
+  {
+    "name": "France",
+    "series": [
+      {
+        "name": "2010",
+        "value": 5000002
       },
       {
-        name: 15,
-        value: 2350
+        "name": "2011",
+        "value": 5800000
       }
     ]
   }
 ];
+
 
   view: any[] = [700, 400];
 
@@ -54,7 +77,7 @@ export class AppComponent {
   showXAxisLabel = true;
   xAxisLabel = 'Number';
   showYAxisLabel = true;
-  yAxisLabel = 'Color Value';
+  yAxisLabel = 'Value';
   timeline = true;
 
   colorScheme = {
@@ -63,5 +86,10 @@ export class AppComponent {
 
   // line, area
   autoScale = true;
+
+  //pie
+  showLabels = true;
+  explodeSlices = false;
+  doughnut = false;
 }
 

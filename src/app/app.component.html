@@ -1,6 +1,7 @@
 <!-- The chart type goes in here -->
 
 <div> This is a visual representation of a line chart</div>
+<div style="display: inline-block">
     <ngx-charts-line-chart
       [view]="view"
       [scheme]="colorScheme"
@@ -17,4 +18,43 @@
       [timeline]="timeline"
       (select)="onSelect($event)">
     </ngx-charts-line-chart>
+  </div>
 
+    <br>
+    <div> This is a visual representation of a area chart</div>
+
+    <div style="display: inline-block">
+    <ngx-charts-area-chart
+      [view]="view"
+      [scheme]="colorScheme"
+      [results]="multi"
+      [gradient]="gradient"
+      [xAxis]="showXAxis"
+      [yAxis]="showYAxis"
+      [legend]="showLegend"
+      [showXAxisLabel]="showXAxisLabel"
+      [showYAxisLabel]="showYAxisLabel"
+      [xAxisLabel]="xAxisLabel"
+      [yAxisLabel]="yAxisLabel"
+      [autoScale]="autoScale"
+      (select)="onSelect($event)">
+    </ngx-charts-area-chart>
+    </div>
+
+
+    <br>
+    <div> This is a visual representation of a pie chart</div>
+
+    <div style="display: inline-block">
+    <ngx-charts-pie-chart
+    [view]="view"
+    [scheme]="colorScheme"
+    [results]="single"
+    [legend]="showLegend"
+    [explodeSlices]="explodeSlices"
+    [labels]="showLabels"
+    [doughnut]="doughnut"
+    [gradient]="gradient"
+    (select)="onSelect($event)">
+  </ngx-charts-pie-chart>
+</div>
