@@ -19,7 +19,7 @@
     "@angular/forms": "^5.2.0",
     "@angular/http": "^5.2.0",
     "@angular/platform-browser": "^5.2.0",
-    "@angular/platform-browser-dynamic": "^5.2.0",
+    "@angular/platform-browser-dynamic": "^10.0.8",
     "@angular/router": "^5.2.0",
     "@swimlane/ngx-charts": "^8.0.2",
     "core-js": "^2.4.1",
